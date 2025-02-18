@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "Web Highlighter",
+    "description": "Highlight text on webpages and save it locally",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "32": "favicon_io/favicon-32x32.png",
+      "192": "favicon_io/android-chrome-192x192.png",
+      "512": "favicon_io/android-chrome-512x512.png"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["js/content.js"],
+        "css": ["css/highlighter.css"]
+      }
+    ],
+    "icons": {
+      "32": "favicon_io/favicon-32x32.png",
+      "192": "favicon_io/android-chrome-192x192.png",
+      "512": "favicon_io/android-chrome-512x512.png"
+    }
+  }

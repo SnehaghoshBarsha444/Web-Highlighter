@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta property="og:image" content="favicon.ico" />
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+     <link rel="manifest" href="favicon_io/site.webmanifest">
+    <meta property="og:image" content="/og-image.png" />
+  <title>Web Highlighter</title>
+  <style>
+    body {
+      width: 250px;
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .header img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    h1 {
+      font-size: 18px;
+      margin: 0;
+    }
+    .color-options {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+    .color-option {
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
+    .color-option.selected {
+      border-color: #000;
+    }
+    .info {
+      font-size: 12px;
+      color: #666;
+      margin-top: 15px;
+    }
+    .btn {
+      width: 100%;
+      padding: 8px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icons/icon32.svg" alt="Web Highlighter Logo">
+    <h1>Web Highlighter</h1>
+  </div>
+  
+  <p>Select highlighting color:</p>
+  <div class="color-options">
+    <div class="color-option selected" style="background-color: #ffff00;" data-color="#ffff00"></div>
+    <div class="color-option" style="background-color: #ff9999;" data-color="#ff9999"></div>
+    <div class="color-option" style="background-color: #99ff99;" data-color="#99ff99"></div>
+    <div class="color-option" style="background-color: #9999ff;" data-color="#9999ff"></div>
+    <div class="color-option" style="background-color: #ff99ff;" data-color="#ff99ff"></div>
+  </div>
+  
+  <button id="clear-highlights-btn" class="btn">Clear All Highlights</button>
+  
+  <div class="info">
+    Highlight text on any webpage by selecting it and it will persist even after reloading the page.
+  </div>
+  
+  <script src="js/popup.js"></script>
+</body>
+</html>

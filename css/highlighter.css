@@ -1,0 +1,35 @@
+.web-highlighter-highlight {
+    background-color: #ffff00;
+    border-radius: 2px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .web-highlighter-highlight:hover {
+    opacity: 0.9;
+  }
+  
+  /* Context menu for highlights - to be implemented */
+  .highlight-context-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none;
+  }
+  
+  .highlight-context-menu.visible {
+    display: block;
+  }
+  
+  .highlight-context-menu-item {
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .highlight-context-menu-item:hover {
+    background-color: #f0f0f0;
+  }
